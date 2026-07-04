@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Datos locales y bases de datos
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/results/
+
+# Outputs generados
+outputs/
+
+# Reports generados pesados
+reports/*.csv
+reports/*.xlsx
+reports/*.png
+reports/*.pdf
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Credenciales
+.env
+*.key
+*.pem
