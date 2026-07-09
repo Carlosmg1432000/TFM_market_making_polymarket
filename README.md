@@ -12,12 +12,13 @@ La herramienta permite:
 
 - Capturar *snapshots* reales del CLOB de Polymarket.
 - Almacenar los datos localmente en SQLite.
+- Seleccionar mercados con suficiente variabilidad y liquidez para el análisis.
 - Calcular variables de mercado como `midprice`, `spread`, profundidad visible, `imbalance` y `drift`.
 - Generar señales de presión del flujo.
 - Implementar distintas estrategias de *market making*.
 - Simular ejecuciones mediante un modelo probabilístico.
 - Evaluar resultados mediante métricas de P&L, inventario, probabilidad de ejecución, *spread* cotizado y selección adversa *ex post*.
-- Generar gráficos para analizar el comportamiento de cada estrategia.
+- Generar tablas resumen y gráficos para analizar el comportamiento de cada estrategia.
 
 ## Estrategias implementadas
 
@@ -45,14 +46,18 @@ El sistema compara cuatro estrategias principales:
 TFM_market_making_polymarket/
 │
 ├── src/
-│   ├── config.py
-│   ├── polymarket_client.py
+│   ├── __init__.py
+│   ├── backtester.py
 │   ├── collector.py
+│   ├── config.py
+│   ├── main.py
+│   ├── market_selector.py
+│   ├── plot_combined_pnl_manual.py
+│   ├── polymarket_client.py
+│   ├── sample_summary.py
 │   ├── signals.py
 │   ├── strategies.py
-│   ├── backtester.py
-│   ├── visualizer.py
-│   └── main.py
+│   └── visualizer.py
 │
 ├── data/
 │   └── market_data.db
